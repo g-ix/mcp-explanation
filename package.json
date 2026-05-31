@@ -1,0 +1,40 @@
+{
+  "name": "mcp-explanation",
+  "version": "1.0.0",
+  "description": "This repo shows a very basic implementation of what's MCP. There's a code explaining client and server and how they communicate with each other.",
+  "keywords": [
+    "mcp"
+  ],
+  "homepage": "https://github.com/g-ix/mcp-explanation#readme",
+  "bugs": {
+    "url": "https://github.com/g-ix/mcp-explanation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-ix/mcp-explanation.git"
+  },
+  "license": "ISC",
+  "author": "Garry Bamrah",
+  "type": "module",
+  "main": "client/index.ts",
+  "scripts": {
+    "client": "tsx client/index.ts",
+    "server": "tsx mcp-server/abcd-mcp-server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@octokit/rest": "^22.0.1",
+    "@slack/web-api": "^7.16.0",
+    "dotenv": "^17.4.2",
+    "pg": "^8.21.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "@types/pg": "^8.15.6",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
